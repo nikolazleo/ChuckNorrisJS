@@ -26,16 +26,20 @@
         if (category !== '' && category !== 'random') {
             url = url + '/random?category=' + category;
             $('#ModalLabel').text(category);
-            // $('#ModalLabel').text(category);
+           
         }
 
         else if (category == 'random' || category == ''){
             url = url + '/random'
             $('#ModalLabel').text('random');
-            $('#ModalLabel').css("background-color", "yellow");
-            $('#ModalLabel').css("text-transform", "capitalize");
             $('#category-dropdown').val('random');
+            
         }
+
+        $('#ModalLabel').css("background-color", "yellow");
+        $('#ModalLabel').css("text-transform", "capitalize");
+        $('#category-dropdown').css("text-transform", "capitalize");
+        $('#category-dropdown').css("text-transform", "capitalize");
         
         $.ajax(url, {
             context: this,
