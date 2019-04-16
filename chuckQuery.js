@@ -33,6 +33,7 @@
             url = url + '/random'
             $('#ModalLabel').text('random');
             $('#ModalLabel').css("background-color", "yellow");
+            $('#ModalLabel').css("text-transform", "capitalize");
             $('#category-dropdown').val('random');
         }
         
